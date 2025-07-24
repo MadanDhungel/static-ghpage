@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Merge</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>
+            Git Merge : Learn how to combine changes from different branches in
+            Git.
+          </h1>
+        </div>
+        <nav>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="intro.html">Git Intro</a></li>
+            <li><a href="config.html">Git Config</a></li>
+            <li><a href="newfile.html">Git New Files</a></li>
+            <li><a href="staging.html">Git Staging</a></li>
+            <li><a href="commit.html">Git Commit</a></li>
+            <li><a href="tagging.html">Git Tagging</a></li>
+            <li><a href="stash.html">Git Stash</a></li>
+            <li><a href="history.html">Git History</a></li>
+            <li><a href="githelp.html">Git Help</a></li>
+            <li><a href="branch.html">Git Branch</a></li>
+            <li><a href="merge.html" class="active">Git Merge</a></li>
+            <li><a href="workflow.html">Git Workflow</a></li>
+            <li><a href="best_practice.html">Git Best Practices</a></li>
+            <li><a href="glossary.html">Git Glossary</a></li>
+          </ul>
+        </nav>
+        <main class="main-body">
+          <section>
+            <h2>What is Git Merge?</h2>
+            <p>
+              <code>git merge</code> is a command that integrates changes from
+              one branch into another.
+            </p>
+          </section>
+
+          <section>
+            <h2>Basic Merge</h2>
+            <pre><code>git checkout main
+git merge feature-branch</code></pre>
+            <p>
+              This merges <code>feature-branch</code> into <code>main</code>.
+            </p>
+          </section>
+
+          <section>
+            <h2>Merge Conflicts</h2>
+            <p>
+              If there are conflicting changes, Git will pause the merge and let
+              you resolve conflicts manually.
+            </p>
+          </section>
+
+          <section>
+            <h2>View Merge Conflicts</h2>
+            <pre><code>git status</code></pre>
+            <p>Lists files with conflicts.</p>
+          </section>
+
+          <section>
+            <h2>After Resolving Conflicts</h2>
+            <pre><code>git add filename.txt
+git commit</code></pre>
+            <p>
+              Stage the resolved files and complete the merge with a commit.
+            </p>
+          </section>
+
+          <section>
+            <h2>Abort a Merge</h2>
+            <pre><code>git merge --abort</code></pre>
+            <p>Cancel the merge and return to the pre-merge state.</p>
+          </section>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 Git Learning Hub</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Branch</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>Git Branch : Learn how to create and manage branches in Git.</h1>
+        </div>
+        <nav>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="intro.html">Git Intro</a></li>
+            <li><a href="config.html">Git Config</a></li>
+            <li><a href="newfile.html">Git New Files</a></li>
+            <li><a href="staging.html">Git Staging</a></li>
+            <li><a href="commit.html">Git Commit</a></li>
+            <li><a href="tagging.html">Git Tagging</a></li>
+            <li><a href="stash.html">Git Stash</a></li>
+            <li><a href="history.html">Git History</a></li>
+            <li><a href="githelp.html">Git Help</a></li>
+            <li><a href="branch.html" class="active">Git Branch</a></li>
+            <li><a href="merge.html">Git Merge</a></li>
+            <li><a href="workflow.html">Git Workflow</a></li>
+            <li><a href="best_practice.html">Git Best Practices</a></li>
+            <li><a href="glossary.html">Git Glossary</a></li>
+          </ul>
+        </nav>
+        <main class="main-body">
+          <section>
+            <h2>What is a Branch?</h2>
+            <p>
+              A branch in Git is a lightweight movable pointer to a commit. It
+              lets you work on different versions of your project
+              simultaneously.
+            </p>
+          </section>
+
+          <section>
+            <h2>List Branches</h2>
+            <pre><code>git branch</code></pre>
+            <p>
+              Shows all branches in the repository. The current branch is
+              highlighted with an asterisk (*).
+            </p>
+          </section>
+
+          <section>
+            <h2>Create a New Branch</h2>
+            <pre><code>git branch new-branch-name</code></pre>
+            <p>This creates a new branch but does not switch to it.</p>
+          </section>
+
+          <section>
+            <h2>Switch Branch</h2>
+            <pre><code>git checkout new-branch-name</code></pre>
+            <p>Switches to the specified branch.</p>
+          </section>
+
+          <section>
+            <h2>Create and Switch Branch</h2>
+            <pre><code>git checkout -b new-branch-name</code></pre>
+            <p>Creates a new branch and switches to it in one command.</p>
+          </section>
+
+          <section>
+            <h2>Delete a Branch</h2>
+            <pre><code>git branch -d branch-name</code></pre>
+            <p>Deletes the specified branch.</p>
+          </section>
+        </main>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2025 Git Learning Hub</p>
+    </footer>
+  </body>
+</html>

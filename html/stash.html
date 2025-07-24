@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Stash</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>
+            Git Stash : Temporarily store changes you've made without committing
+            them.
+          </h1>
+          <!-- <h3>Learn how to save changes to your Git repository</h3> -->
+        </div>
+        <nav>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="intro.html">Git Intro</a></li>
+            <li><a href="config.html">Git Config</a></li>
+            <li><a href="newfile.html">Git New Files</a></li>
+            <li><a href="staging.html">Git Staging</a></li>
+            <li><a href="commit.html">Git Commit</a></li>
+            <li><a href="tagging.html">Git Tagging</a></li>
+            <li><a href="stash.html" class="active">Git Stash</a></li>
+            <li><a href="history.html">Git History</a></li>
+            <li><a href="githelp.html">Git Help</a></li>
+            <li><a href="branch.html">Git Branch</a></li>
+            <li><a href="merge.html">Git Merge</a></li>
+            <li><a href="workflow.html">Git Workflow</a></li>
+            <li><a href="best_practice.html">Git Best Practices</a></li>
+            <li><a href="glossary.html">Git Glossary</a></li>
+          </ul>
+        </nav>
+        <main class="main-body">
+          <section>
+            <h2>What is Git Stash?</h2>
+            <p>
+              The <code>git stash</code> command allows you to save your
+              uncommitted changes temporarily so you can work on something else,
+              and come back to them later.
+            </p>
+          </section>
+
+          <section>
+            <h2>Stash Your Changes</h2>
+            <pre><code>git stash</code></pre>
+            <p>
+              This saves your modifications and reverts your working directory
+              to match the HEAD commit.
+            </p>
+          </section>
+
+          <section>
+            <h2>List Stashes</h2>
+            <pre><code>git stash list</code></pre>
+            <p>Displays a list of all stashed changes.</p>
+          </section>
+
+          <section>
+            <h2>Apply Latest Stash</h2>
+            <pre><code>git stash apply</code></pre>
+            <p>This re-applies the most recently stashed changes.</p>
+          </section>
+
+          <section>
+            <h2>Apply a Specific Stash</h2>
+            <pre><code>git stash apply stash@{1}</code></pre>
+            <p>This applies a specific stash entry.</p>
+          </section>
+
+          <section>
+            <h2>Drop a Stash</h2>
+            <pre><code>git stash drop stash@{0}</code></pre>
+            <p>Deletes a specific stash from the list.</p>
+          </section>
+
+          <section>
+            <h2>Clear All Stashes</h2>
+            <pre><code>git stash clear</code></pre>
+            <p>Deletes all stored stashes.</p>
+          </section>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 Git Learning Hub</p>
+    </footer>
+  </body>
+</html>

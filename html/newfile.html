@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git - New Files</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>
+            Git: Tracking New Files (Understand how Git detects and handles new
+            files in your repository.)
+          </h1>
+        </div>
+        <nav>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="intro.html">Git Intro</a></li>
+            <li><a href="config.html">Git Config</a></li>
+            <li><a href="newfile.html" class="active">Git New Files</a></li>
+            <li><a href="staging.html">Git Staging</a></li>
+            <li><a href="commit.html">Git Commit</a></li>
+            <li><a href="tagging.html">Git Tagging</a></li>
+            <li><a href="stash.html">Git Stash</a></li>
+            <li><a href="history.html">Git History</a></li>
+            <li><a href="githelp.html">Git Help</a></li>
+            <li><a href="branch.html">Git Branch</a></li>
+            <li><a href="merge.html">Git Merge</a></li>
+            <li><a href="workflow.html">Git Workflow</a></li>
+            <li><a href="best_practice.html">Git Best Practices</a></li>
+            <li><a href="glossary.html">Git Glossary</a></li>
+          </ul>
+        </nav>
+        <main class="main-body">
+          <section>
+            <h2>Untracked Files</h2>
+            <p>
+              When you create a new file, Git doesn't track it until you add it
+              manually.
+            </p>
+            <pre><code>git status</code></pre>
+            <p>
+              New files will appear under <strong>Untracked files</strong> in
+              red.
+            </p>
+          </section>
+
+          <section>
+            <h2>Track a New File</h2>
+            <p>Use <code>git add</code> to start tracking a new file:</p>
+            <pre><code>git add filename.txt</code></pre>
+          </section>
+
+          <section>
+            <h2>Track All New Files</h2>
+            <p>You can add all new files at once with:</p>
+            <pre><code>git add .</code></pre>
+          </section>
+
+          <section>
+            <h2>Check Status After Adding</h2>
+            <pre><code>git status</code></pre>
+            <p>
+              Now the file will appear under
+              <strong>Changes to be committed</strong> in green.
+            </p>
+          </section>
+
+          <section>
+            <h2>Commit New Files</h2>
+            <p>Once added, commit the files with a message:</p>
+            <pre><code>git commit -m "Add new file"</code></pre>
+          </section>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 Git Learning Hub</p>
+    </footer>
+  </body>
+</html>

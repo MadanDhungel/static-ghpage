@@ -1,0 +1,78 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #2c3e50;
+  padding: 20px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #34495e;
+  margin-bottom: 0.3em;
+}
+
+header p {
+  color: #7f8c8d;
+  font-size: 1.1em;
+}
+
+/* Main container */
+main {
+  flex-grow: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Navigation List */
+nav ul.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+nav ul.nav-list li a {
+  display: block;
+  padding: 12px 18px;
+  background-color: #2980b9;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul.nav-list li a:hover,
+nav ul.nav-list li a:focus {
+  background-color: #1c5980;
+  outline: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}

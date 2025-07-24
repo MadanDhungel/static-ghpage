@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Workflow</title>
+    <link rel="stylesheet" href="../css/style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>
+            Git Workflow : Overview of a common Git workflow to manage changes
+            efficiently.
+          </h1>
+          <!-- <h3>Learn how to save changes to your Git repository</h3> -->
+        </div>
+        <nav>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+          <a
+            href="#"
+            style="color: white; text-decoration: none; margin-left: 1rem"
+          ></a>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="intro.html">Git Intro</a></li>
+            <li><a href="config.html">Git Config</a></li>
+            <li><a href="newfile.html">Git New Files</a></li>
+            <li><a href="staging.html">Git Staging</a></li>
+            <li><a href="commit.html">Git Commit</a></li>
+            <li><a href="tagging.html">Git Tagging</a></li>
+            <li><a href="stash.html">Git Stash</a></li>
+            <li><a href="history.html">Git History</a></li>
+            <li><a href="githelp.html">Git Help</a></li>
+            <li><a href="branch.html">Git Branch</a></li>
+            <li><a href="merge.html">Git Merge</a></li>
+            <li><a href="workflow.html" class="active">Git Workflow</a></li>
+            <li><a href="best_practice.html">Git Best Practices</a></li>
+            <li><a href="glossary.html">Git Glossary</a></li>
+          </ul>
+        </nav>
+        <main class="main-body">
+          <section>
+            <h2>Basic Git Workflow Steps</h2>
+            <ol>
+              <li>Make changes in your working directory.</li>
+              <li>Stage the changes with <code>git add</code>.</li>
+              <li>Commit the changes with <code>git commit</code>.</li>
+              <li>
+                Push the commits to a remote repository with
+                <code>git push</code>.
+              </li>
+              <li>
+                Pull the latest changes from remote with
+                <code>git pull</code> regularly.
+              </li>
+            </ol>
+          </section>
+
+          <section>
+            <h2>Working with Branches</h2>
+            <p>Use branches to develop features independently:</p>
+            <pre><code>git checkout -b feature-branch</code></pre>
+            <p>Work on your feature, then merge back:</p>
+            <pre><code>git checkout main
+git merge feature-branch</code></pre>
+          </section>
+
+          <section>
+            <h2>Synchronizing with Remote</h2>
+            <pre><code>git fetch
+git merge origin/main</code></pre>
+            <p>Or simply:</p>
+            <pre><code>git pull</code></pre>
+          </section>
+
+          <section>
+            <h2>Best Practices</h2>
+            <ul>
+              <li>Commit often with meaningful messages.</li>
+              <li>Keep branches focused on a single task.</li>
+              <li>Pull changes frequently to minimize conflicts.</li>
+              <li>Review code before merging.</li>
+            </ul>
+          </section>
+        </main>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2025 Git Learning Hub</p>
+    </footer>
+  </body>
+</html>
