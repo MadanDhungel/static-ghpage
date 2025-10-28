@@ -1,3 +1,3 @@
 Live Site:
 
-https://madandhungel.github.io/git-github/
+https://madandhungel.github.io/static-ghpage/
