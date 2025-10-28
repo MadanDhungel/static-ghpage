@@ -1,95 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Login Page</title>
-  <style>
-        body {
-      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
-      min-height: 100vh;
-      margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .login-box {
-      background: #fff;
-      max-width: 350px;
-      width: 100%;
-      margin: auto;
-      padding: 40px 30px 30px 30px;
-      border-radius: 15px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-      border: 1px solid #e0e0e0;
-      text-align: center;
-    }
-    .login-box h2 {
-      margin-bottom: 25px;
-      color: #333;
-      letter-spacing: 1px;
-    }
-    .login-box label {
-      float: left;
-      margin-bottom: 6px;
-      color: #555;
-      font-size: 15px;
-    }
-    .login-box input[type="text"],
-    .login-box input[type="password"] {
-      width: 100%;
-      padding: 10px 12px;
-      margin-bottom: 18px;
-      border: 1px solid #bdbdbd;
-      border-radius: 6px;
-      background: #f7fafd;
-      font-size: 15px;
-      transition: border 0.2s;
-    }
-    .login-box input[type="text"]:focus,
-    .login-box input[type="password"]:focus {
-      border: 1.5px solid #74ebd5;
-      outline: none;
-      background: #fff;
-    }
-    .login-box button {
-      width: 100%;
-      padding: 12px;
-      background: linear-gradient(90deg, #74ebd5 0%, #ACB6E5 100%);
-      border: none;
-      border-radius: 6px;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.2s;
-      margin-bottom: 10px;
-    }
-    .login-box button:hover {
-      background: linear-gradient(90deg, #ACB6E5 0%, #74ebd5 100%);
-    }
-    #error {
-      color: #e74c3c;
-      margin-top: 10px;
-      min-height: 20px;
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and GitHub</title>
+    <link rel="stylesheet" href="css/style1.css" />
 </head>
 <body>
-  <div class="login-box">
-    <h2>Login</h2>
-    <form action="login1.php" method="POST">
-      <label>Username</label><br>
-      <input type="text" id="username" name="username" required><br><br>
-      <label>Password</label><br>
-      <input type="password" id="password" name="password" required><br><br>
-      <button type="submit">Login</button>
-      <p id="error" style="color:red;">
-        <?php if (isset($_GET['error'])) echo "Invalid username or password!"; ?>
-      </p>
-      <p>Don't have an account? <a href="register.html">Register here</a></p>
-      <p>Forgot your password? <a href="forgot-password.html">Reset it</a></p>
-    </form>
-  </div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <!-- Placeholder for logo; W3Schools uses an image here -->
+                <h1>Git and GitHub</h1>
+            </div>
+            <nav>
+                <a href="#" style="color: white; text-decoration: none; margin-left: 1rem;"></a>
+                <a href="#" style="color: white; text-decoration: none; margin-left: 1rem;"></a>
+                <a href="#" style="color: white; text-decoration: none; margin-left: 1rem;"></a>
+            </nav>
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="html/config.html">Git Config</a></li>
+                    <li><a href="html/newfile.html">Git New Files</a></li>
+                    <li><a href="html/staging.html">Git Staging</a></li>
+                    <li><a href="html/commit.html">Git Commit</a></li>
+                    <li><a href="html/tagging.html">Git Tagging</a></li>
+                    <li><a href="html/stash.html">Git Stash</a></li>
+                    <li><a href="html/history.html">Git History</a></li>
+                    <li><a href="html/githelp.html">Git Help</a></li>
+                    <li><a href="html/branch.html">Git Branch</a></li>
+                    <li><a href="html/merge.html">Git Merge</a></li>
+                    <li><a href="html/workflow.html">Git Workflow</a></li>
+                    <li><a href="html/best_practice.html">Git Best Practices</a></li>
+                    <li><a href="html/glossary.html">Git Glossary</a></li> 
+                </ul>
+            </nav>
+            <main class="main-body">
+                <h2>Welcome To Git and GitHub</h2>
+                <p><h3>Git</h3> is a distributed version control system that helps developers track changes in their code over time. 
+                    It allows multiple people to work on a project simultaneously, manages code history, and makes it easy to revert to previous versions when needed. 
+                    Git operates locally on your computer and is known for its speed, flexibility, and powerful branching features.  </p>
+
+                <p><h3>GitHub</h3> is a cloud-based platform that hosts Git repositories and makes it easier to collaborate on projects. 
+                    It provides a user-friendly interface to manage code, track issues, review changes, and work together with others using Git.
+                    GitHub also offers tools for continuous integration, documentation, and project management, making it a central hub for many software development teams.</p>
+                    <div class="example-box">
+                        <li> Git </li>
+                        <li> GitHub </li>
+                        <li> GitLab </li>
+                        <li> Bitbucket </li>
+                        <p>These are some of the most popular version control systems and platforms used in software development.</p>
+                    </div>
+            </main>
+        </div>
+    </div>
+     <footer>
+      <p>&copy; 2025 Git Learning Hub</p>
+    </footer>
 </body>
 </html>
